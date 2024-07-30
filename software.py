@@ -10,3 +10,4 @@ def login():
     else:
         print("Invalid Entry")
 
+login()
