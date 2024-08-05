@@ -8,4 +8,15 @@ def login():
     else:
         print("Invalid Entry")
 
+def new_user():
+    k=input("Enter your desired username: ")
+    v=input("Enter your password: ")
+    id[k]=v
+    print("New Id Successfully Created")
+print("""
+###----WELCOME--TO--ZOMATO----###
+Enter:
+1 for login to an existing account
+2 for creating a new account
 
+""")
