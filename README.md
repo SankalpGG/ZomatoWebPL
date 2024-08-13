@@ -5,5 +5,5 @@ The project will be in CUI
 The Approximate time of arrival of the products will be shown as per time
 User's location will permanantly be CI Heights as it is an accessable location
 Distance will be displayed as per the distance of the outlet from the user's residence
-ikfgvu
-                    "\t"  ![OIG4](https://github.com/user-attachments/assets/9eed979c-e6dd-483b-95f0-9aceb38dec3f)
+
+                      ![OIG4](https://github.com/user-attachments/assets/9eed979c-e6dd-483b-95f0-9aceb38dec3f)
