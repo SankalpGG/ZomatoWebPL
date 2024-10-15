@@ -34,12 +34,12 @@ def home():
     print('''
 1. To order Food
 2.  To DineIn
-3.  To View Discount Code Available
+3.  
 4.  To View Cart
 5.  To Edit Dilevery Address
 6.  To View Popular Today
-7.  To View Order History
-8.  To Edit Payment Options
+7.  
+8. 
 9.  To Delete Your Account
 10.  To Logout
 ''')
