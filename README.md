@@ -6,3 +6,4 @@ The Approximate time of arrival of the products will be shown as per time
 User's location will permanantly be CI Heights as it is an accessable location
 Distance will be displayed as per the distance of the outlet from the user's residence
 
+![OIG4](https://github.com/user-attachments/assets/ed9d223a-326e-4190-8dcc-f050666eed50)
