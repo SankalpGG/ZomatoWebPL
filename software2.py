@@ -17,10 +17,10 @@ def quer2():
     d=cur.fetchall()
     for i in d:
         print(i)
-       
+        
 def quer3():
-    r1=random.randint(101,103)
-    r2=random.randint(104,107)
+    r1=random.randint(101,102)
+    r2=random.randint(105,107)
     q3="SELECT * FROM customer WHERE custid BETWEEN '{}' AND '{}' ".format(r1,r2)
     cur.execute(q3)
     d=cur.fetchall()
