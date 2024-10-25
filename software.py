@@ -1,4 +1,9 @@
-#ZomatoXBlinkit
+#Zomato WebPlatform
+import random
+import mysql.connector as c
+
+con=c.connect(host="localhost",user="root",passwd="SANKALP_4141",database="zomato")
+cur=con.cursor()
 
 id={'user':123456}
 
@@ -10,7 +15,7 @@ def login():
     else:
         print("Invalid Credentials")
 
-login()
+
 
 def register():
     k=input("enter user name ")
@@ -27,21 +32,18 @@ def register():
             print("password mismatch")
             register()
 
-register()
+
 
 def home():
     print("Welcome to Home Page")
     print('''
-1. To order Food
-2.  To DineIn
-3.  
-4.  To View Cart
-5.  To Edit Dilevery Address
-6.  To View Popular Today
-7.  
-8. 
-9.  To Delete Your Account
-10.  To Logout
+1.  To order Food by search
+2.
+3.  To View Cart
+4.  To Edit Dilevery Address
+5.  To View Popular cuisine Today
+6.  To Delete Your Account
+7.  To Logout
 ''')
     n=int(input('>'))
     if n==1:
@@ -65,6 +67,17 @@ def home():
     if n==10:
         print('You have been logged out')
 
-home()
+
 
      
+def trial():
+    try:
+        cur.execute("SELECT * FROM popular;")
+        d = cur.fetchall()
+        for i in d:
+            print(i)
+        print("end")
+    except Exception as e:
+        print("Error:", e)
+
+trial()
