@@ -137,13 +137,13 @@ def order():
         c= int(input("enter sno of item to be added into cart: "))
         global cart
         cart.append(d[c-1])
-        cho=input("Do you want to enter another item? (y/n)")
+        cho=input("Do you want to enter another item? (y/n) ")
     view_cart()
 
     
 def feedback():
     global key
-    fb=input("Enter Feedback")
+    fb=input("Enter Feedback: ")
     query = "INSERT INTO feedback (id, content) VALUES (%s, %s);"
     cur.execute(query, (key, fb))
     print("Thank You for Your Feedback")
@@ -152,6 +152,8 @@ def feedback():
 def placeo():
     global cart
     print("Your Order for the items in your cart has been placed")
+    r=random.randint(25,45)
+    print("Your order will bw delivered in approximately",str(r),"minutes")
     print("Items you ordered are:")
     for i in cart:
         print(i[1])
@@ -168,3 +170,6 @@ if dk==1:
     login()
 if dk==2:
     register()
+
+cur.close()
+con.commit()
