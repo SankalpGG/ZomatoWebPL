@@ -35,6 +35,7 @@ def register():
             login()
         else:
             print("password mismatch")
+            register()
 
 
 def home():
